@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AboutChuck from "../views/AboutChuck.vue";
+import AboutMe from "@/views/AboutMe";
 
 const routes = [
   {
@@ -7,7 +8,12 @@ const routes = [
     name: "AboutChuck",
     component: AboutChuck,
   },
-  //  TODO: Implementieren Sie hier die Route zu /about-me
+  {
+    path: "/aboutMe",
+    name: "/AboutMe",
+    component: AboutMe
+    //  TODO: Implementieren Sie hier die Route zu /about-me
+  }
 ];
 
 const router = createRouter({
